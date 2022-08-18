@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {{ partial "head.html" . }}
+  </head>
+  <body class="w-full bg-white dark:bg-black">
+    <div class="flex flex-col justify-center items-center">
+      <div
+        class="max-w-xl w-full h-full min-h-screen pt-8 pb-4 flex flex-col px-4 sm:px-0"
+      >
+        {{ partial "header.html" . }}
+        <div class="grow">{{ block "main" . }}{{ end }}</div>
+        <div class="pt-8">{{ partial "footer.html" . }}</div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+/* assets */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+  .text-gradient {
+    @apply box-decoration-clone text-transparent bg-clip-text bg-gradient-to-r from-[#5b247a] to-[#1bcedf] dark:from-[#cb5eee] dark:to-[#4be1ec] w-fit;
+  }
+
+  .text-link {
+    @apply font-medium text-black dark:text-white underline;
+  }
+}
