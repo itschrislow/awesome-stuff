@@ -1,4 +1,4 @@
-{{ $styles := resources.Get "/css/style.css" | postCSS }} {{ if .Site.IsServer }}
+{{ $styles := resources.Get "css/style.css" | postCSS }} {{ if .Site.IsServer }}
 
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
 {{ else }} {{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
