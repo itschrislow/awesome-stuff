@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A curated list of resources for developers in Malaysia.",
   "author": "itschrislow",
+  "main": "index.js",
   "scripts": {
     "start": "concurrently npm:watch:*",
     "watch:tw": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css --watch",
