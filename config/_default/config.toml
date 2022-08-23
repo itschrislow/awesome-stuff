@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://awesomestuff.dev/"
 languageCode = "en-us"
 title = "Awesome Stuff"
 disableKinds = ["taxonomy","taxonomyTerm"]
