@@ -1,32 +1,26 @@
-# Hugo & Tailwind 3.1 (now 3.1.6!)
+# Awesome Stuff [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
 
-## A barebone Hugo & Tailwind CSS 3.1 starter kit
+## 💡 Overview
 
-**Install to VS Code with:**  
-`git clone https://github.com/4044ever/Hugo-Tailwind-3.0 optinal-foldername`  
-`npm install`
+This is a curated list of awesome resources for 🇲🇾 Malaysia developers who are constantly seeking growth and improvement. Resources are frequently updated so please 🌟 star 🌟 this repository!
 
-**To start developing:**  
-`npm run start`
+## 🛠 Installation
 
-**To generate the site HTML:**  
-`npm run build`
+Note: Hugo is required to run. Instructions on how to install Hugo can be found on their [official documentation website](https://gohugo.io/getting-started/installing/).
 
-**npm run start** will run two commands parallel:  
-`npx tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css --watch`
+#### Clone the repository
 
-and
-`hugo server`
+```bash
+git clone https://github.com/itschrislow/awesome-stuff.git
+```
 
-Note: You do not have to install Hugo with `Hugo new site hugofolder` ! But you need to have the Hugo environment running!
+#### Install dependencies
 
-Note: When you start first time **npm run start** a style.css must exist - or you get an error! Just do a **Ctrl+c** and run **npm run start** - even though you got an error but a style was written anyway and 2nd time round it should start fine.
+```bash
+npm i
+npm run start
+```
 
-To get out of developing mode you need to do **Ctrl+c** twice.
+## 🖋 Contributing
 
-> **Disclaimer:** This is my first try with Hugo and Tailwind 3.0. To me it looks like all functions work, classes get updated, a correct `/public/` folder with purged, minified style*.css gets created. Seems production ready, you can build a theme around it. Leave a comment if you see errors or improvements. 
-
-> **Update Notes:** If you have an older version and new Tailwind classes don't update, change in `tailwind.config.js` to `content: ['./layouts/**/*.html', './content/**/*.md']`. Allowing `HTML` in `*.md` files may help too, allow them in `config.toml`
-
-> **Hugo Note:** Tested up to/with [Hugo 0.101.0 extended](https://github.com/gohugoio/hugo/releases/tag/v0.101.0). So far all new Hugo version worked for me.
-
+Pull requests are welcomed! If you would like to add a new list or update and existing list, please check out the [contribution guidelines](https://github.com/itschrislow/awesome-stuff/blob/main/CONTRIBUTING.md)!
