@@ -8,12 +8,18 @@
     "start": "concurrently npm:watch:*",
     "watch:tw": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css --watch",
     "watch:hugo": "hugo server -D",
-    "build": "hugo --minify"
+    "build": "hugo --minify",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{js,css,md,html}": "prettier --write"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.4",
     "autoprefixer": "^10.4.7",
     "concurrently": "^7.2.2",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "postcss": "^8.4.14",
     "postcss-cli": "^10.0.0",
     "prettier": "^2.7.1",
