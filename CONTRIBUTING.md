@@ -39,13 +39,9 @@ If you want to update the description or add a new item to an existing list, ple
 
 ## Submitting a pull request (PR)
 
-https://github.com/atom/atom/blob/master/PULL_REQUEST_TEMPLATE.md
-
 Please follow these steps to have your contribution considered:
 
-<!-- TODO: add link to PR template -->
-
-1. Follow all instructions of the [pull request template]()
+1. Follow all instructions of the [pull request template](https://github.com/itschrislow/awesome-stuff/blob/main/PULL_REQUEST_TEMPLATE.md)
 2. Follow the [styleguides](#styleguides)
 3. Verify that all status checks are passing
 
