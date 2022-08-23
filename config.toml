@@ -1,6 +1,6 @@
-baseURL = '/'
-languageCode = 'en-us'
-title = 'Awesome Dev Resources'
+baseURL = "/"
+languageCode = "en-us"
+title = "Awesome Stuff"
 disableKinds = ["taxonomy","taxonomyTerm"]
 
 [markup]
@@ -8,5 +8,7 @@ disableKinds = ["taxonomy","taxonomyTerm"]
     [markup.goldmark.renderer]
       unsafe = true
 
-
-
+[params]
+  description = "A curated list of awesome resources for developers in 🇲🇾 Malaysia."
+  ogimage = "/img/og.png"
+  keywords = []

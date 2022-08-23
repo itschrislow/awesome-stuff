@@ -1,5 +1,5 @@
 {
-  "name": "awesome-dev-resources",
+  "name": "awesome-stuff",
   "version": "1.0.0",
   "description": "A curated list of resources for developers in Malaysia.",
   "author": "itschrislow",
@@ -10,7 +10,6 @@
     "watch:hugo": "hugo server -D",
     "build": "hugo --minify"
   },
-  "dependencies": {},
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.4",
     "autoprefixer": "^10.4.7",
