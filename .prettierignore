@@ -1,5 +1,2 @@
 .github/
-archetypes/
-assets/css/
-content/
-*.md
+assets/css/style.css
