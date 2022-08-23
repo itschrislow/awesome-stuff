@@ -1,0 +1,25 @@
+{
+  "overrides": [
+    {
+      "files": ["*.html"],
+      "options": {
+        "parser": "go-template",
+        "goTemplateBracketSpacing": true,
+        "bracketSameLine": true
+      }
+    },
+    {
+      "files": ["*.js", "*.ts"],
+      "options": {
+        "useTabs": true,
+        "printWidth": 80,
+        "singleQuote": false,
+        "semi": true,
+        "trailingComma": "es5",
+        "tabWidth": 2,
+        "quoteProps": "consistent",
+        "arrowParens": "avoid"
+      }
+    }
+  ]
+}

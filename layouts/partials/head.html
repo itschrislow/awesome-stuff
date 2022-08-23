@@ -2,15 +2,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-{{ template "_internal/google_analytics.html" . }} {{ partial "meta.html" . }}
-{{ $styles := resources.Get "/css/style.css" | postCSS }} {{ if .Site.IsServer
-}}
-<link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
-{{ else }} {{ $styles := $styles | minify | fingerprint | resources.PostProcess
-}}
-<link
-  rel="stylesheet"
-  href="{{ $styles.RelPermalink }}"
-  integrity="{{ $styles.Data.Integrity }}"
-/>
+{{ template "_internal/google_analytics.html" . }}
+{{ partial "meta.html" . }}
+{{ $styles := resources.Get "/css/style.css" | postCSS }}
+{{ if .Site.IsServer }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
+{{ else }}
+  {{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
+  <link
+    rel="stylesheet"
+    href="{{ $styles.RelPermalink }}"
+    integrity="{{ $styles.Data.Integrity }}" />
 {{ end }}
