@@ -29,18 +29,10 @@
 <meta name="twitter:url" content="{{ .Permalink }}" />
 
 <!-- IMAGE TAGS -->
-<meta
-  itemprop="image"
-  content="{{ .Site.BaseURL }}{{ .Site.Params.ogimage | absURL }}" />
-<meta
-  property="og:image"
-  content="{{ .Site.BaseURL }}{{ .Site.Params.ogimage | absURL }}" />
-<meta
-  name="twitter:image"
-  content="{{ .Site.BaseURL }}{{ .Site.Params.ogimage | absURL }}" />
-<meta
-  name="twitter:image:src"
-  content="{{ .Site.BaseURL }}{{ .Site.Params.ogimage | absURL }}" />
+<meta itemprop="image" content="{{ .Site.Params.ogimage | absURL }}" />
+<meta property="og:image" content="{{ .Site.Params.ogimage | absURL }}" />
+<meta name="twitter:image" content="{{ .Site.Params.ogimage | absURL }}" />
+<meta name="twitter:image:src" content="{{ .Site.Params.ogimage | absURL }}" />
 
 <!-- ARTICLE TAGS -->
 {{ if ne .Site.GetPage "home" }}
