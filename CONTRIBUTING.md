@@ -31,6 +31,8 @@ This section guides you through submitting a completely new list of resources. P
 3. Create resource table with appropriate columns and links
 4. Set `draft: false` when list is ready to publish
 
+Note: Tables should be sorted alphabetically by the first column
+
 ### I want to update an existing list
 
 This section guides you through updating an existing list of resources. Following these guidelines helps maintainers and the community understand your suggestion 📝 and find related suggestions 🔎.
@@ -51,6 +53,7 @@ Please follow these steps to have your contribution considered:
 
 - Use title case for content titles
 - End all sentences with a period
+- Use American spellings of words
 
 ### Git Commit Messages
 
