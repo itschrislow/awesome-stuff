@@ -1,12 +1,19 @@
 {{ define "main" }}
-<h1 class="text-4xl font-extrabold mb-8 text-gradient">Table of Contents</h1>
-<div class="prose prose-sm dark:prose-invert sm:prose-base">
-  <ul class="list-disc">
-    {{ range .Pages.ByTitle }}
-    <li>
-      <a href="{{ .Permalink  }}">{{ .Title }}</a>
-    </li>
-    {{ end }}
-  </ul>
-</div>
+  {{ $title := .Title }}
+  {{ with .Site.GetPage "home" }}
+    {{ $title = "Table of Contents" }}
+  {{ end }}
+
+
+  <h1 class="text-4xl font-extrabold mb-8 text-gradient">{{ $title }}</h1>
+  <div class="prose prose-sm dark:prose-invert sm:prose-base">
+    <ul class="list-disc">
+      {{ range .Pages.ByTitle }}
+        <li>
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+          {{ partial "recursiveList.html" . }}
+        </li>
+      {{ end }}
+    </ul>
+  </div>
 {{ end }}
