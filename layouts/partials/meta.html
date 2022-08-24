@@ -36,7 +36,7 @@
 <meta name="twitter:image:src" content="{{ .Site.Params.ogimage | absURL }}" />
 
 <!-- ARTICLE TAGS -->
-{{ if ne .Site.GetPage "home" }}
+{{ if ne .IsHome true }}
   <meta property="og:type" content="article" />
   <meta
     property="og:article:published_time"
@@ -47,6 +47,10 @@
   {{ with delimit .Keywords ", " }}
     <meta name="keywords" content="{{ . }}" />
   {{ end }}
+{{ else }}
+  <meta
+    name="keywords"
+    content="developer resources, dev resources, awesome, awesome lists, awesome resources, Malaysia" />
 {{ end }}
 
 
